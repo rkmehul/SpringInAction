@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage('Build & Deploy to Nexus') { 
             steps { 
-              sh 'mvn -s ./taco-cloud/settings.xml -DskipTests clean install deploy'
+              sh 'cd taco-cloud && mvn -s settings.xml -DskipTests clean install deploy'
             }
         }
          
