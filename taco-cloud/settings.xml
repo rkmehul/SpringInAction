@@ -1,0 +1,17 @@
+<settings>
+  <servers>
+    <server>
+      <id>nexus-local</id> <!-- This is the server ID -->
+      <username>admin</username>
+      <password>docker</password>
+    </server>
+  </servers>
+
+  <mirrors>
+    <mirror>
+      <id>nexus-local</id> <!-- This is the mirror ID -->
+      <url>http://192.168.68.101:32000/repository/maven-central/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
