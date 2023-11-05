@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taco-cloud-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: taco-cloud
+  template:
+    metadata:
+      labels:
+        app: taco-cloud
+    spec:
+      containers:
+      - name: taco-cloud
+        image: rkmehul/taco-cloud:latest  # Use the correct image name and tag
+        ports:
+        - containerPort: 8080  # Adjust the port as needed

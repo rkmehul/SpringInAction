@@ -1,5 +1,5 @@
-FROM openjdk:8-jdk
+FROM openjdk:17-jdk
 EXPOSE 8080
 USER root
-COPY ./target/demo-0.0.1-SNAPSHOT.jar /home/root/app.jar 
+COPY taco-cloud-0.0.1-20231105.053833-1.jar /home/root/app.jar 
 ENTRYPOINT ["java","-jar","/home/root/app.jar"]
