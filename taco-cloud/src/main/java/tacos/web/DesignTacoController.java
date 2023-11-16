@@ -12,7 +12,6 @@ import sia.tacocloud.Ingredient;
 import sia.tacocloud.Ingredient.Type;
 @Slf4j
 @Controller
-@RequestMapping("/design")
 public class DesignTacoController {
 
 @GetMapping("/design")
