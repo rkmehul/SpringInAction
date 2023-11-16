@@ -14,7 +14,8 @@ import sia.tacocloud.Ingredient.Type;
 @Controller
 @RequestMapping("/design")
 public class DesignTacoController {
-@GetMapping
+
+@GetMapping("/design")
 public String showDesignForm(Model model) {
 List<sia.tacocloud.Ingredient> ingredients = Arrays.asList(
 new sia.tacocloud.Ingredient("FLTO", "Flour Tortilla", sia.tacocloud.Ingredient.Type.WRAP),
